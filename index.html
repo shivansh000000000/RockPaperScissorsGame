@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2 id="welcome-message">Welcome to Rock Paper Scissors Game</h2>
+    <button id="back-button" onclick="goBack()" style="display: none;">Back</button>
+    <div class="container" id="game-container" style="display: none;">
+        <h1>Rock Paper Scissors</h1>
+        <div class="choices">
+            <button onclick="play('rock')">Rock</button>
+            <button onclick="play('paper')">Paper</button>
+            <button onclick="play('scissors')">Scissors</button>
+        </div>
+        <div class="result">
+            <h2 id="result-text"></h2>
+            <div>
+                <p>Your choice: <span id="user-choice"></span></p>
+                <p>Computer choice: <span id="computer-choice"></span></p>
+            </div>
+            <div class="hand-signs">
+                <span id="user-hand"></span>
+                <span id="computer-hand"></span>
+            </div>
+        </div>
+        <div class="scoreboard">
+            <p class="scoreboard-title">Scoreboard</p>
+            <p id="wins">Wins: 0</p>
+            <p id="losses">Losses: 0</p>
+            <p id="ties">Ties: 0</p>
+        </div>
+    </div>
+    <button id="start-button" onclick="startGame()">Start Game</button>
+
+    <!-- Sound Effects -->
+    <audio id="win-sound" src="win.mp3" preload="auto"></audio>
+    <audio id="lose-sound" src="lose.mp3" preload="auto"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>

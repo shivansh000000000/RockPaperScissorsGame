@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#welcome-message {
+    font-size: 24px; /* Increase font size for welcome message */
+    margin-bottom: 20px; /* Margin below the message */
+    text-shadow: 0 0 20px #0ff, 0 0 30px #0ff; /* Neon effect */
+}
+
+.container {
+    max-width: 90%; /* Adjusted for mobile */
+    margin: 20px auto; /* Reduced margin for mobile */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-shadow: 0 0 20px #0ff, 0 0 30px #0ff;
+}
+
+.scoreboard {
+    margin-top: 20px; /* Space above scoreboard */
+    font-size: 18px; /* Font size for scoreboard */
+    color: white; /* Text color set to white */
+    background-color: #007BFF; /* Match scoreboard color with button */
+    padding: 10px; /* Padding for scoreboard */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Blue shadow */
+}
+
+.scoreboard-title {
+    font-size: 24px; /* Increased font size for scoreboard title */
+    font-weight: bold; /* Bold text for scoreboard title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.choices {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+}
+
+.choices button {
+    padding: 15px 20px;
+    margin: 10px 0; /* Vertical margin */
+    font-size: 20px; /* Increased font size for better touch targets */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF; /* Button color */
+    color: white;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px #0ff;
+    width: 80%; /* Button width for mobile */
+}
+
+.choices button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.hand-signs {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.hand-signs span {
+    margin: 0 20px;
+}
+
+#start-button {
+    padding: 15px 20px; /* Increased padding for better touch targets */
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff0080; /* Neon pink for the start button */
+    color: white;
+    box-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080; /* Neon effect */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%; /* Button width for mobile */
+    margin: 30px auto; /* Center the button and move it down slightly */
+    display: block; /* Ensure it takes full width for centering */
+}
+
+#start-button:hover {
+    background-color: #e60073; /* Darker shade for hover effect */
+}
+
+#back-button {
+    position: absolute;
+    top: 20px; /* Positioning from the top */
+    left: 20px; /* Positioning from the left */
+    padding: 10px 15px; /* Padding for button */
+    font-size: 16px; /* Font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #ff0080; /* Neon pink color */
+    color: white; /* Text color */
+    box-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080; /* Neon effect */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#back-button:hover {
+    background-color: #e60073; /* Darker shade for hover effect */
+}
